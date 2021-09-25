@@ -1,65 +1,68 @@
-# MechaCar_Statistical_Analysis
+# bikesharing
 
-## Overview of Project
-A few weeks after starting his new role, Jeremy is approached by upper management about a special project. AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. AutosRUs’ upper management has called on Jeremy and the data analytics team to review the production data for insights that may help the manufacturing team.
+## Overview
 
-In this challenge, you’ll help Jeremy and the data analytics team do the following:
+### Background
+Last summer you and your friend Kate, took the trip of a lifetime, NYC for two full weeks, exploring historical landmarks like central park, the statue of liberty, and the empire state building. It was a magical experience and as you flew home together, you looked through your vacation photos and had a realization. One of the key ingredients to the magic was an unlikely suspect, Citi bike. You and Kate had biked everywhere, which allowed you to really get to know the city and interact with the people who live there, and who are using bikes for their commutes. A gem of an idea starts to form in your mind, what if you could start a similar bike share business in your hometown of Des Moines, Iowa. You and Kate start brainstorming, and a few weeks later she calls you with some incredible news. She has a potential angel investor who might be interested in providing seed funding to explore a bike share program in Des Moines. This is an exciting prospect, but you know you have to think realistically. Mechanics of making this business work might be quite different in Damion than in the city. Your first step is to figure out exactly how the bike share business works in NYC. From there, you will create a proposal on how this will work in Des Moines.
 
-* Perform multiple linear regression analysis to identify which variables in the dataset predict the mpg of MechaCar prototypes
-* Collect summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots
-* Run t-tests to determine if the manufacturing lots are statistically different from the mean population
-* Design a statistical study to compare vehicle performance of the MechaCar vehicles against vehicles from other manufacturers. For each statistical analysis, you’ll write a summary interpretation of the findings.
+### Purpose
+Now that we've gotten a good idea of how to create our story, there is still some more work to be done to convince investors that a bike-sharing program in Des Moines is a solid business proposal. To solidify the proposal, one of the key stakeholders would like to see a bike trip analysis.
 
-## Deliverables:
-This new assignment consists of three technical analysis deliverables and a proposal for further statistical study. You’ll submit the following:
+For this analysis, you’ll use Pandas to change the "tripduration" column from an integer to a datetime datatype. Then, using the converted datatype, you’ll create a set of visualizations to:
 
-1. ***Deliverable 1:*** Linear Regression to Predict MPG
-2. ***Deliverable 2:*** Summary Statistics on Suspension Coils
-3. ***Deliverable 3:*** T-Test on Suspension Coils
-4. ***Deliverable 4:*** Design a Study Comparing the MechaCar to the Competition
+Show the length of time that bikes are checked out for all riders and genders
+Show the number of bike trips for all riders and genders for each hour of each day of the week
+Show the number of bike trips for each type of user and gender for each day of the week.
+Finally, you’ll add these new visualizations to the two you created in this module for your final presentation and analysis to pitch to investors.
 
-## Deliverable 1
-### Linear Regression to Predict MPG
+## What You're Creating / Results (via image)
 
----> Insert image here
+Deliverable 1: Change Trip Duration to a Datetime Format
 
-1. Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+![alt tag](https://github.com/elrvra/bikesharing/blob/main/Resources/Deliverable1-pic1.png)
+![alt tag](https://github.com/elrvra/bikesharing/blob/main/Resources/Deliverable1-pic2.png)
 
-- The vehicle length and vehicle ground clearance provided a non-random amount of variance to the mpg values on the MechaCar prototype
+### Deliverable 2: Create Visualizations for the Trip Analysis
 
-2. Is the slope of the linear model considered to be zero? Why or why not?
+- Charts 1-5 as required in this deliverable can be viewed below in Deliverable 3
 
-- The slope of the linear model is not considered zero as the p-value: 5.35e-11 is less than the assumed significance level of 0.05%
+### Deliverable 3: Create a Story and Report for the Final Presentation
 
-3. Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+a) overview/purpose of analysis
 
-- This linear model does in fact predict mpg of MechaCar prototypes effectively as the r-squared value of 0.7149, about 71% of all mpg predictions will be determined by this models
+- This challenege was designed to showcase the Tableau skills we learned and to create an analysis on bike usage in New York City for August 2019 in order to make assumptions on how a potential bike share app would work in Des Moines, Iowa. Visualizations were created and put into a Tableau story to be presented to investors.
 
-## Deliverable 2
-### T-Test on Suspension Coils
+b) results (includes: link to Tableau dashboard, 7 charts and stories)
 
----> Insert image here
+- LINK [link to dashboard](https://public.tableau.com/app/profile/elena.rivera4127/viz/TableauBikesharingStory/FinalPresentationStory?publish=yes)
 
-1. The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+![alt tag](https://github.com/elrvra/bikesharing/blob/main/Resources/Deliverable3-pic1.png)
 
-- The current manufacturing data does meet the design specification of not exceeding 100 pounds per square inch, as the variance of the coils is 62.29 PSI when looking at the total population
+![alt tag](https://github.com/elrvra/bikesharing/blob/main/Resources/Deliverable3-pic2.png)
 
-- Additionally, when looking at the lot summary, we can see that lot 1 and lot 2 specifically does meet the design specification of not exceeding 100 pounds per square inch, as the variance of the coils is .98 and 7.47 respectively; however, lot 3 is well over with a variance = 170..29
+![alt tag](https://github.com/elrvra/bikesharing/blob/main/Resources/Deliverable3-pic3.png)
 
-## Deliverable 3
-### T-Test on Suspension Coils
+![alt tag](https://github.com/elrvra/bikesharing/blob/main/Resources/Deliverable3-pic4.png)
 
----> Insert image here
+![alt tag](https://github.com/elrvra/bikesharing/blob/main/Resources/Deliverable3-pic5.png)
 
-1. Briefly summarize the interpretation and findings for the t-test results.
+![alt tag](https://github.com/elrvra/bikesharing/blob/main/Resources/Deliverable3-pic6.png)
 
--  The true mean is 1498.78, and with a p-Value of 0.06, higher than the common significance level of 0.05, there is not sufficient evident to support rejecting the null hypothesis. Additionally, when looking at each individual lot, we can see that lot 1 and 2 have roughly the same true mean and will p-Values of 1 and 0.61 respectively, we can concur that the null hypothesis cannot be rejected here either. However, lot 3, with a true mean of 1496.14 and a p-Value of 0.04 (which is lower than the common significance of 0.05), indicates to reject the null hypothesis, which is the oppostie of the other lots.
+![alt tag](https://github.com/elrvra/bikesharing/blob/main/Resources/Deliverable3-pic7.png)
 
-## Deliverable 4
-### Study Design: MechaCar vs Competition
+c) summary
 
-1. Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating. Address the following questions in your description:
-a) What metric or metrics are you going to test?
-b) What is the null hypothesis or alternative hypothesis?
-c) What statistical test would you use to test the hypothesis? And why?
-d) What data is needed to run the statistical test?
+In conclusion, using NYC as a model to determing the success in Des Moines, Iowa - we can see that:
+- The male gender are the dominant users of CitiBikes
+- There are specific times of day where these bikes are used more often
+- The majority of trips are less than an hour and are concentrated in the mid- to lower- parts of NYC
+- When looking at the locations more specifically using two additonal charts (as shown below) for Top Starting Trip Locations and Trip Ending Trip Locations, we can see these occurs happen in the more densley populated areas in an around the Metro North area and going to other parts of town in the mid- to lower- parts of NYC that have higher amounts of businesses
+
+
+![alt tag](https://github.com/elrvra/bikesharing/blob/main/Resources/Deliverable3-pic8.png)
+
+![alt tag](https://github.com/elrvra/bikesharing/blob/main/Resources/Deliverable3-pic9.png)
+
+
+
+
