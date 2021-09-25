@@ -44,7 +44,7 @@ This new assignment consists of three technical analysis deliverables and a prop
 
 - The current manufacturing data does meet the design specification of not exceeding 100 pounds per square inch, as the variance of the coils is 62.29 PSI when looking at the total population
 
-- Additionally, when looking at the lot summary, we can see that lot 1 and lot 2 specifically does meet the design specification of not exceeding 100 pounds per square inch, as the variance of the coils is .98 and 7.47 respectively; however, lot 3 is well over with a variance = 170..29
+- Additionally, when looking at the lot summary, we can see that lot 1 and lot 2 specifically does meet the design specification of not exceeding 100 pounds per square inch, as the variance of the coils is .98 and 7.47 respectively; however, lot 3 is well over with a variance = 170.29
 
 ## Deliverable 3
 ### T-Test on Suspension Coils
