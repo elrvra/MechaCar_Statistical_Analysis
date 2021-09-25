@@ -36,7 +36,7 @@ This new assignment consists of three technical analysis deliverables and a prop
 - This linear model does in fact predict mpg of MechaCar prototypes effectively as the r-squared value of 0.7149, about 71% of all mpg predictions will be determined by this models
 
 ## Deliverable 2
-### T-Test on Suspension Coils
+### Summary Statistics on Suspension Coils
 
 ![alt tag](https://github.com/elrvra/MechaCar_Statistical_Analysis/blob/main/Resources/Deliverable2pic.png)
 
