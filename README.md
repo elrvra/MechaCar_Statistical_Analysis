@@ -63,3 +63,5 @@ a) What metric or metrics are you going to test?
 b) What is the null hypothesis or alternative hypothesis?
 c) What statistical test would you use to test the hypothesis? And why?
 d) What data is needed to run the statistical test?
+
+- In order to quantify how the MechaCar performs against the competition, some metrics that can be tested are the safety feature rating, drive package, resale value, miles per gallon, and vehicle history (e.g. accident details, recall checks, number of previous owners). After determining key factors, a null hypothesis would indicate price based on performance of key factors, and an alternative hypothesis would indicate that it is not priced based on performance of key factors. A linear regression model could be used to test the hypothesis to determine the relationship between MechaCar's age (independent variable) and its projected sale price (dependent variable). 
